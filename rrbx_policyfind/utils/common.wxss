@@ -1,0 +1,17 @@
+/*主要颜色  */
+
+.mainColor {
+  color: #3a84df;
+}
+
+.mainColor_bg {
+  background-color: #3a84df;
+}
+.page {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.font-normal {
+  font-size: 15px;
+}

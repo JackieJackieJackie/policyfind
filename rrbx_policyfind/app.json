@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/searchresult/index",
+    "pages/callphone/index"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#009aff",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/tab_home.png",
+        "selectedIconPath": "images/tabbar/tab_home_in.png"
+      },
+      {
+        "pagePath": "pages/callphone/index",
+        "text": "一键拨号",
+        "iconPath": "images/tabbar/tab_phone.png",
+        "selectedIconPath": "images/tabbar/tab_phone_in.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath": "images/tabbar/tab_about.png",
+        "selectedIconPath": "images/tabbar/tab_about_in.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "titleBarColor": "#3a84df",
+    "navigationBarBackgroundColor": "#3a84df",
+    "navigationBarTitleText": "保单验真云助手",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

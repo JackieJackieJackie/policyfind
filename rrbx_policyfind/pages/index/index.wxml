@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<import src="../../wxParse/wxSearchHot.wxml"/>
+  <view class='bg'>
+      <image class='home-image' src='/images/icon_home.jpg'></image>
+      <view class='home-image-view'>
+       <image class='home-image-search'  src='/images/icon_home_search.png' bindtap='hotsearch' /> 
+       </view>
+  </view>
+  

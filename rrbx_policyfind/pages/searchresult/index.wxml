@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<import src="/wxSearch/wxSearchResult.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel" wx:if="{{isaplimg==false}}">
+    <input name="myInput" bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-text wxSearch-input" placeholder="请输入保险公司名称（例如：平安）" />
+    
+     <button class="wxSearch-btn-normal"  bindtap="wxSearchFn">搜索</button>
+  </view>
+</view>
+<!-- 搜索插件 -->
+<template is="wxSearch" data="{{wxSearchData}}"/>
+<!--弹窗  -->
+ <view class='shade_box' wx:if="{{isaplimg==true}}">
+ 
+  <view class='modal tc '>
+    <view class='cancelbtn'>
+    <view class='madName'>{{companyname}}</view>
+    <button class='cancle_text' bindtap='closeEject' type="warn"  size="mini">关闭</button> 
+    </view>
+    <!-- 富文本插件 -->
+    <scroll-view scroll-y="true" style="height: 500rpx;">
+    <template is="wxParse" data="{{wxParseData:insertData.nodes}}" />
+    </scroll-view>
+  </view> 
+  
+  <view class="shade_bg" catchtap='closeEject'></view>
+  
+</view> 
